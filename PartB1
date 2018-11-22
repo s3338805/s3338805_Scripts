@@ -1,4 +1,25 @@
 #!/bin/sh
-#Part B Scripting requirements
+#Assignment Part B Scripting requirement 1"
+#author Rebecca Paton
+#Student ID S3338805
+##
+#This script is to take a single inport and based on the input do one of 
+#4 things.(So I choose case $1 to do this) 
 #
-echo "Hello-World"
+
+case $1 in 
+	"1")
+		echo "choice 1"
+;;
+	"2")
+		echo "choice 2"
+;;
+	"3")
+		echo "choice 3"
+;;
+	"4")
+		echo "choice 4"
+;;
+	*)
+		echo "Sorry, I did not understand your request. Please choose and integer between 1 and 4"
+esac
