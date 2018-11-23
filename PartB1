@@ -5,10 +5,10 @@
 ##
 #This script is to take a single inport and based on the input do one of 
 #4 things.(So I choose case $1 to do this) 
-#
 #Option1 Get Free memory in human readable format
 FREE=/usr/bin/free
 #Option2 Get free and used disk space in human readable format
+DF=/bin/df
 #Option3 Get Connection information for all network ports
 #Option4 Get System uptime
 #
@@ -20,7 +20,8 @@ case $1 in
 		$FREE -h | awk '{print $2 " " $3}'
 ;;
 	"2")
-		echo "choice 2"
+		echo "Disk Free and Used space is"
+		$DF -h -l | awk '{print $1 " " $2 " " $3 " " $4}'
 ;;
 	"3")
 		echo "choice 3"
