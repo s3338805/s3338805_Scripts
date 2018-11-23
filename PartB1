@@ -12,6 +12,7 @@ DF=/bin/df
 #Option3 Get Connection information for all network ports
 IP=/bin/ip
 #Option4 Get System uptime
+UPTIME=/usr/bin/uptime
 #
 #
 
@@ -29,7 +30,7 @@ case $1 in
 		$IP addr sho | awk '{print $1 " " $2}'
 ;;
 	"4")
-		echo "choice 4"
+		$UPTIME | awk '{print}'
 ;;
 	*)
 		echo "Sorry, I did not understand your request. Please choose and integer between 1 and 4"
