@@ -3,7 +3,7 @@
 #author Rebecca Paton
 #Student ID S3338805
 ##
-#This script is to take a single inport and based on the input do one of 
+#This script is to take a single input and based on the input do one of 
 #4 things.(So I choose case $1 to do this) 
 #Option1 Get Free memory in human readable format
 FREE=/usr/bin/free
@@ -14,7 +14,7 @@ IP=/bin/ip
 #Option4 Get System uptime
 UPTIME=/usr/bin/uptime
 #
-#
+#man page included PartB1.1
 
 case $1 in 
 	"1")

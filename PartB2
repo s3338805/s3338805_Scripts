@@ -1,0 +1,36 @@
+#!/bin/bash
+#Assignement 2 Part B Scripting Requirement 2
+#author Rebecca Paton
+#Student ID S3338805
+##
+#The Script requirement is to use getopts to receive arguments to do one of the following:
+#1 the number of cpu cores on the system
+#2 the current process’ priority (nice number)
+#3 the total number of processes running under the current user
+#4 the number of open file descriptors owned by the current user
+#5 the maximum default number of  file descriptors that can be opened by a process. 
+while getopts "12345" OPTION; do
+
+case $OPTION in
+	"1")
+		INPUT="Option 1"
+	;;
+	"2")
+		INPUT="Option 2"
+	;;
+	"3")
+		INPUT="Option 3"
+	;;
+	"4")
+		INPUT="Option 4"
+	;;
+	"5")
+		INPUT="Option 5"
+	;;
+	*)
+		echo "Invalid Option"
+esac
+
+	echo $INPUT
+
+done
