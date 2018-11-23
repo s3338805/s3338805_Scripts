@@ -33,5 +33,5 @@ case $1 in
 		$UPTIME | awk '{print}'
 ;;
 	*)
-		echo "Sorry, I did not understand your request. Please choose and integer between 1 and 4"
+		echo "Sorry, I did not understand your request. Please provide an integer between 1 and 4"
 esac
